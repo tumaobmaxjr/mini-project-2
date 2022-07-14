@@ -1,0 +1,176 @@
+/* style for analysis.php */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.masthead {
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+html {
+  background: rgba(183, 228, 199, 0.5);
+}
+
+body {
+  font-family: "Arial";
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, .65);
+  color: rgb(160, 255, 147);
+  animation: slideInFromLeft 1.2s ease-in;
+
+}
+
+.hero-btn {
+  animation: slideInFromLeft 1.2s ease-in;
+}
+
+
+.table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background: rgba(45, 106, 79, 0.75);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(8, 28, 21, 0.2);
+}
+a {
+  text-decoration: none;
+}
+.bot {
+  text-align: center;
+  padding: 1em;
+}
+.addNew {
+  text-align: right;
+}
+.login {
+  border: 3px solid #f1f1f1;
+  width: 300px;
+  margin: auto;
+}
+img.avatar {
+  width: 100px;
+  border-radius: 20%;
+  border: 5px solid #65d36a;
+}
+
+.container {
+  padding: 16px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+button:hover {
+  opacity: 0.8;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #089e03;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+.index-form {
+  width: 300px;
+}
+.details-page {
+  text-align: center;
+}
+
+/* animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar-brand, .hero-img {
+  animation: slideInFromRight 1.5s ease-in;
+}
+
+/* media query */
+
+@media(max-width:500px) {
+  section {
+    display: none;
+  }
+}
